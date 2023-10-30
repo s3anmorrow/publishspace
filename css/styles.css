@@ -37,12 +37,24 @@ a {
     }
 }
 
+figure {
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+figcaption {
+    font-size:13px;
+    font-weight: 900;
+    color: #6f7276;
+    padding-top:3px;
+}
+
 footer p {
     font-weight: bold;
 }
 
 /* --------------------------- page / section styling */
-
 #p-home aside {
     max-width: 800px;
     padding-top:10px;
@@ -64,20 +76,6 @@ footer p {
     width: 200px;
     height: 298px;
 }
-
-figure {
-    margin: 0px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-}
-
-figcaption {
-    font-size:13px;
-    font-weight: 900;
-    color: #6f7276;
-    padding-top:3px;
-}
-
 
 #p-thumbnail #s-navigation {
     padding-bottom:20px;
