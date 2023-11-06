@@ -12,6 +12,47 @@ body {
     align-items:center;
 }
 
+.heading {
+    font-family: "share tech";
+    font-size: 40px;
+    font-weight:bold;
+}
+
+.sub-heading {
+    font-size: 16px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    color: #6f7276;
+}
+
+a {
+    text-decoration: none;
+    color: #3d5170;
+    &:visited {
+        color: #3d5170;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+figure {
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+figcaption {
+    font-size:13px;
+    font-weight: 900;
+    color: #6f7276;
+    padding-top:3px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
 #thumbnails {
     max-width: 880px;
     padding-top:20px;
@@ -32,47 +73,6 @@ aside {
 	padding-bottom:10px;
     border-top: dotted 2px #3d5170;
 	margin-top:10px;
-}
-
-figure {
-    margin: 0px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-}
-
-figcaption {
-    font-size:13px;
-    font-weight: 900;
-    color: #6f7276;
-    padding-top:3px;
-}
-
-a {
-    text-decoration: none;
-    color: #3d5170;
-}
-a:visited {
-    color: #3d5170;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-.heading {
-    font-family: "share tech";
-    font-size: 40px;
-    font-weight:bold;
-}
-
-.sub-heading {
-    font-size: 16px;
-    letter-spacing: 8px;
-    font-weight: 600;
-    color: #6f7276;
-}
-
-footer p {
-    font-weight: bold;
 }
 
 i {
