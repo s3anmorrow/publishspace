@@ -53,6 +53,14 @@ footer p {
     font-weight: bold;
 }
 
+aside {
+    max-width: 800px;
+    padding-top:10px;
+	padding-bottom:10px;
+    border-top: dotted 2px #3d5170;
+	margin-top:10px;
+}
+
 #thumbnails {
     max-width: 880px;
     padding-top:20px;
@@ -65,14 +73,6 @@ img {
     border-radius: 5px;
     width: 200px;
     height: 298px;
-}
-
-aside {
-    max-width: 800px;
-    padding-top:10px;
-	padding-bottom:10px;
-    border-top: dotted 2px #3d5170;
-	margin-top:10px;
 }
 
 i {
