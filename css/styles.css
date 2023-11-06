@@ -95,6 +95,7 @@ i {
 }
 
 .full-image {
+    border-radius: 10px;
     width:469px;
     height:700px;
 }
