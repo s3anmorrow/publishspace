@@ -75,13 +75,13 @@ img {
     height: 298px;
 }
 
-i {
-    padding-right:8px;
-}
-
 nav {
     padding-bottom:20px;
     display:flex;
+}
+
+i {
+    padding-right:8px;
 }
 
 .nav-link {
