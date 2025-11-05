@@ -80,19 +80,18 @@ export async function getJSONData(retrieveScript:string, cacheExpiry:number|fals
 // arguments :
 // sendURL : string - the URL to send the JSON data to
 // sendJSON : object - the JSON data to send
+// requestType : string - the type of HTTP request to make (default is "POST")
 // debug : boolean - whether to throw an error if one occurs (default is set to true)
-export async function sendJSONData(sendURL: string, sendJSON: any, debug: boolean = true) {
+export async function sendJSONData(sendURL: string, sendJSON: any, requestType:string = "POST", debug: boolean = true) {
     try {
-        const response = await fetch(sendURL, {
-            method: "POST",
+        const response:Response = await fetch(sendURL, {
+            method: requestType,
             headers: { "content-type": "application/json" },
             body: JSON.stringify(sendJSON),
             cache: 'no-store'
         });
-        // Check if the response status indicates an error - manually throw error since fetch only throws error for network issues
-        if (!response.ok) throw new Error();
-        const data:any = await response.json();
-        return data;
+        const responseData:any = await response.json();
+        return {data:responseData, status:response.status};
     } catch (error:any) {
         console.log(`>>> FETCH ERROR: ${error.message}`);
         if (debug) throw error;

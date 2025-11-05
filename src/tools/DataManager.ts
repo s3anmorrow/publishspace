@@ -5,7 +5,8 @@ import { InsertOneResult } from "mongodb";
 import sanitizeHtml from "sanitize-html";
 
 // MongoDB database connectivity constants
-const URL:string = "mongodb://mongo:27017";
+// const URL:string = "mongodb://mongo:27017";
+const URL:string = process.env.MONGO_URL!;
 const DB_NAME:string = "dbPortfolio";
 const COLLECTION_NAME:string = "samplesCollection";
 

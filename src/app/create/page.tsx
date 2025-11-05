@@ -15,9 +15,20 @@ export default function Create() {
     // ----------------------------------- adding new course
     const onSubmit = async (e:any) => {
         setLoading(true);
-        // send out JSON to server
-        // ...
 
+        // send out JSON to server
+        const responseData:{data:any, status:number}|null = await sendJSONData(POST_URL, { name:txtName, description:txtDescription, url:txtURL }, "POST", false);
+
+        console.log(responseData);
+
+        // error handling
+        if (responseData && responseData.status == 200) {
+            // success - navigate back to home page
+            router.push("/");
+        } else {
+            // failure - show error message
+            router.push("/error");
+        }
 
     };
 

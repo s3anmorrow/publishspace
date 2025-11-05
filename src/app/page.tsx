@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { SamplesList } from '@/components/SamplesList';
 import { getSamples } from '@/tools/DataManager';
 import { Sample } from "@/tools/samples.model";
