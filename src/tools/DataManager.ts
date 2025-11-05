@@ -6,7 +6,9 @@ import sanitizeHtml from "sanitize-html";
 
 // MongoDB database connectivity constants
 // const URL:string = "mongodb://mongo:27017";
-const URL:string = process.env.MONGO_URL!;
+// const URL:string = process.env.MONGO_URL!;
+const URL:string = process.env.MONGO_URL || "mongodb://mongo:27017";
+
 const DB_NAME:string = "dbPortfolio";
 const COLLECTION_NAME:string = "samplesCollection";
 
